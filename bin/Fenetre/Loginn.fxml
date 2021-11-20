@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<fx:root minHeight="483.0" minWidth="578.0" prefHeight="507.0" prefWidth="675.0" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane fx:id="pane1" prefHeight="525.0" prefWidth="348.0" styleClass="Pane1" stylesheets="@Fenetre.css">
+         <children>
+            <ImageView fitHeight="256.0" fitWidth="246.0" layoutX="51.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/facture.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="60.0" layoutY="317.0" prefHeight="17.0" prefWidth="206.0" text="ITS-CASH">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Hyperlink fx:id="buttonUrl" layoutX="51.0" layoutY="445.0" onAction="#ButtonUrlClicked" prefHeight="40.0" prefWidth="182.0" text=" www.itsforward.ch" textFill="#1b05ed">
+               <font>
+                  <Font size="20.0" />
+               </font></Hyperlink>
+         </children>
+      </Pane>
+      <Pane fx:id="pan2" layoutX="348.0" layoutY="-1.0" prefHeight="525.0" prefWidth="348.0" styleClass="CAISSE-FINAL" stylesheets="@Fenetre.css">
+         <children>
+            <TextField fx:id="textEmailPseudo" layoutX="35.0" layoutY="135.0" prefHeight="48.0" prefWidth="246.0" promptText="Pseudo ou e-mail" />
+            <PasswordField fx:id="textPasse" layoutX="35.0" layoutY="195.0" onKeyPressed="#KeyPressedPan2" prefHeight="48.0" prefWidth="246.0" promptText="Mot de passe" />
+            <Button fx:id="bntLogin" layoutX="139.0" layoutY="323.0" mnemonicParsing="false" onAction="#BntLoginClicked" prefHeight="86.0" prefWidth="142.0" styleClass="ipad-grey" stylesheets="@Fenetre.css" text="Login">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font></Button>
+            <Label fx:id="LabelEmail" layoutX="15.0" layoutY="29.0" prefHeight="39.0" prefWidth="325.0">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label fx:id="LabelPasse" layoutX="15.0" layoutY="68.0" prefHeight="39.0" prefWidth="325.0">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Hyperlink fx:id="bntPasse" layoutX="35.0" layoutY="256.0" onAction="#BntPasseCliked" text="Mot de passe oublié" textFill="#131313">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Hyperlink>
+         </children>
+      </Pane>
+   </children>
+</fx:root>

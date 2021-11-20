@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/JDK-ECLIPSE/barcodes-7.1.3.jar"/>
+	<classpathentry kind="lib" path="D:/JDK-ECLIPSE/com.mysql.jdbc_5.1.5.jar"/>
+	<classpathentry kind="lib" path="D:/JDK-ECLIPSE/controlsfx-9.0.0.jar"/>
+	<classpathentry kind="lib" path="D:/JDK-ECLIPSE/font-asian-7.1.3.jar"/>
+	<classpathentry kind="lib" path="D:/JDK-ECLIPSE/forms-7.1.3.jar"/>
+	<classpathentry kind="lib" path="D:/JDK-ECLIPSE/hyph-7.1.3.jar"/>
+	<classpathentry kind="lib" path="D:/JDK-ECLIPSE/io-7.1.3.jar"/>
+	<classpathentry kind="lib" path="D:/JDK-ECLIPSE/itextpdf-5.5.13.jar"/>
+	<classpathentry kind="lib" path="D:/JDK-ECLIPSE/jPDFProcess.v2018R1.13.jar"/>
+	<classpathentry kind="lib" path="D:/JDK-ECLIPSE/jPDFWriter.jar"/>
+	<classpathentry kind="lib" path="D:/JDK-ECLIPSE/jPDFWriter.v2016R1.04.jar"/>
+	<classpathentry kind="lib" path="D:/JDK-ECLIPSE/kernel-7.1.3.jar"/>
+	<classpathentry kind="lib" path="D:/JDK-ECLIPSE/layout-7.1.3.jar"/>
+	<classpathentry kind="lib" path="D:/JDK-ECLIPSE/mysql-connector-java-5.1.47.zip"/>
+	<classpathentry kind="lib" path="D:/JDK-ECLIPSE/pdfa-7.1.3.jar"/>
+	<classpathentry kind="lib" path="D:/JDK-ECLIPSE/pdftest-7.1.3.jar"/>
+	<classpathentry kind="lib" path="D:/JDK-ECLIPSE/postgresql-42.2.5.jre7.jar"/>
+	<classpathentry kind="lib" path="D:/JDK-ECLIPSE/psamples.jar"/>
+	<classpathentry kind="lib" path="D:/JDK-ECLIPSE/sign-7.1.3.jar"/>
+	<classpathentry kind="lib" path="D:/JDK-ECLIPSE/slf4j-api-1.7.26.jar"/>
+	<classpathentry kind="lib" path="D:/JDK-ECLIPSE/slf4j-simple-1.7.26.jar"/>
+	<classpathentry kind="lib" path="D:/JDK-ECLIPSE/styled-xml-parser-7.1.3.jar"/>
+	<classpathentry kind="lib" path="D:/JDK-ECLIPSE/svg-7.1.3.jar"/>
+	<classpathentry kind="lib" path="D:/JDK-ECLIPSE/pdfbox-app-2.0.16.jar"/>
+	<classpathentry kind="lib" path="D:/JDK-ECLIPSE/jfoenix-8.0.8.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

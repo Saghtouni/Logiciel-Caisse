@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="379.0" prefHeight="379.0" prefWidth="500.0" styleClass="ButtonURL" stylesheets="@Fenetre.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Fenetre.EnregisterControl">
+   <children>
+      <TextField fx:id="textPseudo" layoutX="107.0" layoutY="96.0" prefHeight="26.0" prefWidth="220.0" promptText="Choisissez un nom d'utilsateur" />
+      <TextField fx:id="textEmail" layoutX="107.0" layoutY="147.0" prefHeight="26.0" prefWidth="220.0" promptText="Insérer votre email" />
+      <Button fx:id="bntEnregistrer" layoutX="107.0" layoutY="310.0" mnemonicParsing="false" onAction="#bntEnregistrerClicked" prefHeight="32.0" prefWidth="101.0" text="Inscription" />
+      <Label fx:id="LabelMessage" layoutX="107.0" layoutY="48.0" prefHeight="18.0" prefWidth="149.0" />
+      <PasswordField fx:id="textMotPasse1" layoutX="107.0" layoutY="200.0" prefHeight="26.0" prefWidth="220.0" promptText="Créez un mot de passe" />
+      <PasswordField fx:id="textMotPasse2" layoutX="107.0" layoutY="251.0" prefHeight="26.0" prefWidth="220.0" promptText="Confirmez votre mot de passe " />
+   </children>
+</AnchorPane>

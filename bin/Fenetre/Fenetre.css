@@ -1,0 +1,255 @@
+
+.borderpane {
+	-fx-background-color: white ;
+	
+}
+	
+.Pane1 {
+	-fx-background-color: white ;
+	
+}
+
+.Pane0 {
+	-fx-background-color: Black ;
+	
+}
+
+.table-view .table-cell{
+
+      
+    -fx-font-size: 2em;         
+}
+
+
+.Pane2 {
+	-fx-background-color: red ;
+	
+}
+.PaneCaisse {
+	-fx-background-color: #E6F6EC;
+}
+.PaneCaisse2{
+	-fx-background-color: #c7dbd1
+}
+.ButtonURL {
+	-fx-underline: true;
+}
+.ButtonPasse {
+	-fx-background-color: red;
+	-fx-underline: true;
+}
+.bntPasse {
+	-fx-background-color: red;
+}
+.ButtonFacture {
+	-fx-background-color: white ;
+	-font-size: 50px;
+	
+}
+.ButtonStock {
+	-fx-background-color: white ;
+	-font-size: 18px;
+}
+.ButtonAnalyse {
+	-fx-background-color: white ;
+
+}
+.ButtonDevis {
+	-fx-background-color: white ;
+	
+}
+.ButtonUtilisateur {
+	-fx-background-color: white ;
+	
+}
+.ButtonCaisse {
+	-fx-background-color: white ;
+	
+}
+.TextTitre {
+	-fx-background-color : #e4e7e7;
+}
+
+.buttonCaisse  {
+  -fx-background-color:white ;
+  -fx-text-fill: black;
+  -fx-background-radius: 50px;
+}
+.ipad-grey {
+    -fx-background-color: 
+        rgba(0,0,0,0),
+        linear-gradient( 	#FF0000,  	#FF0000),
+        linear-gradient(#FFFFFF 0%,#FFFFFF 10%, #FFFFFF 50%, #FFFFFF 51%, #FFFFFF 100%);
+   
+}
+
+.ipad-grey2 {
+    -fx-background-color: 
+        rgba(0,0,0,0),
+        linear-gradient( 	#7AC480,  	#7AC480),
+        linear-gradient(#FFFFFF 0%,#FFFFFF 10%, #FFFFFF 50%, #FFFFFF 51%, #FFFFFF 100%);
+   
+}
+
+.CAISSE-FINAL{
+	-fx-background-color: linear-gradient(#7AC480, #44B38D, #059F9C);
+}
+.Haut{
+	-fx-background-color:#7AC480;
+}
+.Melieu{
+	-fx-background-color:#44B38D;
+}
+.Bas{
+	-fx-background-color: #059F9C;
+}
+.iphone {
+    -fx-background-color: 
+        #000000,
+        linear-gradient(#7ebcea, #2f4b8f),
+        linear-gradient(#426ab7, #263e75),
+        linear-gradient(#395cab, #223768);
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-padding: 7 30 7 30;
+    -fx-text-fill: #242d35;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 12px;
+    -fx-text-fill: white;
+}
+.ipad-caiss {
+    -fx-background-color: 
+      rgba(230, 246, 236, 1),
+        linear-gradient( 	#FF0000,  	#FF0000),
+        linear-gradient(#FFFFFF 0%,#FFFFFF 10%, #FFFFFF 50%, #FFFFFF 51%, #FFFFFF 100%);
+   
+}
+.ipad-Black {
+    -fx-background-color: 
+        rgba(0,0,0,0),
+        linear-gradient( 	#000000,  	#000000),
+        linear-gradient(#FFFFFF 0%,#FFFFFF 10%, #FFFFFF 50%, #FFFFFF 51%, #FFFFFF 100%);
+}
+.root{
+    -fx-background-color: #a9a9a9;
+}
+
+.table-view{
+   -fx-background-color: transparent;
+}
+
+.table-view:focused{
+    -fx-background-color: transparent;
+}
+
+/* Spaltenköpfe
+    Struktur column-header-background -> column-header */
+
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(#003a64, #00487e, #005797);
+}
+
+
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell{
+    -fx-text-fill: white;
+}
+
+.table-row-cell{
+    -fx-background-color: -fx-table-cell-border-color, #838383;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.table-row-cell:odd{
+    -fx-background-color: -fx-table-cell-border-color, #a9a9a9;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */  
+}
+
+.table-row-cell:selected {
+    -fx-background-color: linear-gradient(#003a64, #00487e, #005797);
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+
+.table-view > .virtual-flow > .scroll-bar:vertical,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track-background, 
+.table-view > .virtual-flow > .scroll-bar:horizontal,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track-background {
+    -fx-background-color: transparent;
+}
+
+
+
+.table-view > .virtual-flow > .scroll-bar > .increment-button, 
+.table-view > .virtual-flow > .scroll-bar > .decrement-button {
+    -fx-opacity: 0;
+}
+.tab-pane .tab-header-area .tab-header-background {
+	
+    -fx-opacity: 0;
+}
+.transparent {
+	-fx-background-color: transparent;
+}
+
+.tab-pane
+{
+	-fx-background-color: #FFFFFF;
+    -fx-tab-min-width:90px;
+}
+
+.tab{
+    -fx-background-insets: 0 1 0 1,1,1;
+}
+.tab-pane .tab
+{
+    -fx-background-color:#494949;
+
+}
+
+.tab-pane .tab:selected
+{
+    -fx-background-color: linear-gradient(#003a64, #00487e, #005797);
+}
+
+.tab .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #828282;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.tab:selected .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #96b946;
+}
+
+.Date
+{
+
+    -fx-font-size: 16pt;
+    
+    
+}
+
+.root {
+-fx-background-color:white;
+ }
+ 
+ .label1 {
+ 	-fx-font-size: 20px;
+    -fx-font-weight: bold;
+ }

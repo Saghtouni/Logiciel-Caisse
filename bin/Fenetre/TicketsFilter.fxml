@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane styleClass="CAISSE-FINAL" stylesheets="@Fenetre.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <AnchorPane styleClass="CAISSE-FINAL" stylesheets="@Fenetre.css" BorderPane.alignment="CENTER">
+         <children>
+            <DatePicker fx:id="datedebut" layoutX="14.0" layoutY="54.0" prefHeight="45.0" prefWidth="309.0" styleClass="ipad-grey" AnchorPane.rightAnchor="394.0" AnchorPane.topAnchor="54.0" />
+            <DatePicker fx:id="datefin" layoutX="27.0" layoutY="54.0" prefHeight="45.0" prefWidth="295.0" styleClass="ipad-grey" AnchorPane.rightAnchor="716.0" AnchorPane.topAnchor="54.0" />
+            <Button fx:id="btnRechercher" layoutX="695.0" layoutY="54.0" mnemonicParsing="false" onAction="#btnRechercherClicked" prefHeight="45.0" prefWidth="142.0" styleClass="ipad-grey" stylesheets="@Fenetre.css" text="Rechercher" AnchorPane.rightAnchor="201.0" AnchorPane.topAnchor="54.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="dateD" layoutX="27.0" layoutY="20.0" text="Date Debut" AnchorPane.rightAnchor="892.0" AnchorPane.topAnchor="20.0">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="dateF" layoutX="335.0" layoutY="20.0" text="Date Fin" AnchorPane.rightAnchor="617.0" AnchorPane.topAnchor="20.0">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutY="112.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="112.0">
+               <children>
+                  <TableView fx:id="tableticketsFiltered" prefHeight="400.0" prefWidth="1054.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-16.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="datecol" prefWidth="296.0" text="Date" />
+                      <TableColumn fx:id="sommecol" minWidth="0.0" prefWidth="184.0" text="Somme" />
+                        <TableColumn fx:id="detailscol" prefWidth="233.0" text="Details" />
+                        <TableColumn fx:id="actionscol" prefWidth="191.0" text="Actions" />
+                        <TableColumn fx:id="tableColum" prefWidth="149.0" text="Table" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+            <Button fx:id="bntTicket" layoutX="905.0" layoutY="14.0" mnemonicParsing="false" onAction="#bntTicketCliked" prefHeight="68.0" prefWidth="119.0" styleClass="ipad-grey" stylesheets="@Fenetre.css" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="903.0" prefWidth="1920.0" styleClass="CAISSE-FINAL" stylesheets="@Fenetre.css" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane fx:id="PaneAnalyse" layoutX="10.0" layoutY="10.0" prefHeight="768.0" prefWidth="1047.0" styleClass="PaneCaisse2" stylesheets="@Fenetre.css" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-9.0" AnchorPane.topAnchor="0.0">
+         <tabs>
+            <Tab fx:id="tabcom" text="Commande">
+               <content>
+                  <AnchorPane styleClass="CAISSE-FINAL">
+                     <children>
+                        <HBox layoutY="-1.0" prefHeight="85.0" prefWidth="1268.0" styleClass="CAISSE-FINAL" stylesheets="@Fenetre.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Button fx:id="AjoutButton" mnemonicParsing="false" onAction="#AjoutButtonClicked" prefHeight="93.0" prefWidth="120.0" styleClass="ipad-grey" stylesheets="@Fenetre.css" visible="false" />
+                              <Button fx:id="supButton" mnemonicParsing="false" onAction="#supButtonClicked" prefHeight="93.0" prefWidth="120.0" styleClass="ipad-grey" stylesheets="@Fenetre.css" />
+                              <AnchorPane prefHeight="100.0" prefWidth="673.0">
+                                 <children>
+                                    <HBox layoutX="11.0" prefHeight="85.0" prefWidth="665.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="11.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <VBox prefHeight="85.0" prefWidth="294.0">
+                                             <children>
+                                                <Label fx:id="dateD11" text="Date Début :">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <DatePicker fx:id="datefin3" prefHeight="37.0" prefWidth="254.0" styleClass="ipad-grey" />
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="85.0" prefWidth="270.0">
+                                             <children>
+                                                <Label fx:id="dateF11" text="Date Fin :">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <DatePicker fx:id="datedebut3" prefHeight="37.0" prefWidth="254.0" styleClass="ipad-grey" />
+                                             </children>
+                                          </VBox>
+                                          <VBox alignment="CENTER" prefHeight="85.0" prefWidth="181.0">
+                                             <children>
+                                                <Button fx:id="btnRechercher3" alignment="CENTER" mnemonicParsing="false" onAction="#btnRechercher3Clicked" prefHeight="47.0" prefWidth="139.0" styleClass="ipad-grey" text="Rechercher">
+                                                   <font>
+                                                      <Font name="System Bold" size="20.0" />
+                                                   </font>
+                                                </Button>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <TableView fx:id="tabCommande" layoutY="85.0" prefHeight="712.0" prefWidth="1268.0" stylesheets="@Fenetre.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="85.0">
+                           <columns>
+                              <TableColumn fx:id="IdColumn" prefWidth="76.0" text="ID" />
+                              <TableColumn fx:id="dateColumn" prefWidth="427.0" text="Date" />
+                              <TableColumn fx:id="nomColumn" prefWidth="201.0" text="Nom utilisateur" />
+                              <TableColumn fx:id="prenomColumn" prefWidth="319.0" text="Prénom utilisateur" />
+                              <TableColumn fx:id="produitColumn" prefWidth="284.0" text="Produits" />
+                              <TableColumn fx:id="sommeColumn" prefWidth="224.0" text="Somme " />
+                              <TableColumn fx:id="TVAColumn" prefWidth="172.0" text="TVA" />
+                              <TableColumn fx:id="paiementColumn" prefWidth="225.0" text="Mode de paiement" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="tabstat" text="Statistique ">
+               <content>
+                  <AnchorPane styleClass="CAISSE-FINAL">
+                     <children>
+                        <Label fx:id="dateF" layoutX="431.0" layoutY="17.0" text="Date Fin :" AnchorPane.leftAnchor="431.0" AnchorPane.topAnchor="17.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="dateD" layoutX="21.0" layoutY="17.0" text="Date Début :" AnchorPane.leftAnchor="21.0" AnchorPane.topAnchor="17.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btnRechercher" layoutX="861.0" layoutY="3.0" mnemonicParsing="false" onAction="#btnRechercherClicked" prefHeight="54.0" prefWidth="149.0" styleClass="ipad-grey" text="Rechercher" AnchorPane.leftAnchor="861.0" AnchorPane.topAnchor="3.0">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font></Button>
+                        <DatePicker fx:id="datedebut" layoutX="146.0" layoutY="6.0" prefHeight="45.0" prefWidth="254.0" styleClass="ipad-grey" AnchorPane.leftAnchor="146.0" AnchorPane.topAnchor="6.0" />
+                        <DatePicker fx:id="datefin" layoutX="534.0" layoutY="7.0" prefHeight="46.0" prefWidth="254.0" styleClass="ipad-grey" AnchorPane.leftAnchor="534.0" AnchorPane.topAnchor="7.0" />
+                        <PieChart fx:id="char1" layoutX="899.0" layoutY="70.0" prefHeight="749.0" prefWidth="838.0" AnchorPane.bottomAnchor="45.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="70.0" />
+                        <BarChart fx:id="bar2" layoutX="2.0" layoutY="475.0" prefHeight="364.0" prefWidth="809.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="881.0">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                        </BarChart>
+                        <BarChart fx:id="bar1" layoutX="2.0" layoutY="54.0" prefHeight="371.0" prefWidth="808.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="882.0" AnchorPane.topAnchor="54.0">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                        </BarChart>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Historique">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="CAISSE-FINAL" stylesheets="@Fenetre.css">
+                     <children>
+                        <DatePicker fx:id="datedebut2" layoutX="132.0" layoutY="16.0" prefHeight="45.0" prefWidth="254.0" styleClass="ipad-grey" AnchorPane.leftAnchor="132.0" AnchorPane.topAnchor="16.0" />
+                        <DatePicker fx:id="datefin2" layoutX="509.0" layoutY="17.0" prefHeight="46.0" prefWidth="254.0" styleClass="ipad-grey" AnchorPane.leftAnchor="509.0" AnchorPane.topAnchor="17.0" />
+                        <Button fx:id="btnRechercher2" layoutX="814.0" layoutY="11.0" mnemonicParsing="false" onAction="#btnRechercher2Clicked" prefHeight="55.0" prefWidth="145.0" styleClass="ipad-grey" text="Rechercher" AnchorPane.leftAnchor="814.0" AnchorPane.topAnchor="11.0">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font></Button>
+                        <Label fx:id="dateD1" layoutX="14.0" layoutY="25.0" text="Date Début :" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="25.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="dateF1" layoutX="401.0" layoutY="27.0" text="Date Fin :" AnchorPane.leftAnchor="401.0" AnchorPane.topAnchor="27.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TableView fx:id="tableCA" layoutX="14.0" layoutY="76.0" prefHeight="403.0" prefWidth="1676.0" stylesheets="@Fenetre.css" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="76.0">
+                          <columns>
+                            <TableColumn fx:id="datecol" prefWidth="999.9999923706055" text="Date" />
+                            <TableColumn fx:id="cacol" prefWidth="912.0" text="Valeur" />
+                          </columns>
+                        </TableView>
+                        <TableView fx:id="tableCaissier" layoutX="16.0" layoutY="514.0" prefHeight="299.0" prefWidth="792.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="16.0">
+                          <columns>
+                            <TableColumn fx:id="nomcol" prefWidth="396.0" text="Nom Caissier" />
+                            <TableColumn fx:id="nbrvtcol" prefWidth="395.0" text="Nombre des ventes" />
+                          </columns>
+                        </TableView>
+                        <TableView fx:id="tableProduits" layoutX="910.0" layoutY="515.0" prefHeight="299.0" prefWidth="782.0" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="0.0">
+                          <columns>
+                            <TableColumn fx:id="nomcol2" prefWidth="391.0" text="Produit" />
+                            <TableColumn fx:id="nbrvtcol2" prefWidth="387.0" text="Nombre des ventes" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="btnImprimer" layoutX="1562.0" layoutY="9.0" mnemonicParsing="false" onAction="#ImpHistoriqueClicked" prefHeight="59.0" prefWidth="106.0" styleClass="ipad-grey" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="5.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</fx:root>

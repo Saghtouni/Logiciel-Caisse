@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<fx:root prefHeight="610.0" prefWidth="904.0" styleClass="CAISSE-FINAL" stylesheets="@Fenetre.css" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="tableclients" layoutY="68.0" prefHeight="397.0" prefWidth="917.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="68.0">
+        <columns>
+          <TableColumn fx:id="columnNom" prefWidth="245.0" text="Nom et Prenom" />
+          <TableColumn fx:id="columnTel" prefWidth="185.0" text="Telephone" />
+            <TableColumn fx:id="columnAdr" prefWidth="486.0" text="Adresse" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="-1.0" layoutY="1.0" prefHeight="74.0" prefWidth="917.0" styleClass="CAISSE-FINAL" stylesheets="@Fenetre.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="rechercherText" layoutX="14.0" layoutY="10.0" onKeyReleased="#rechercherClient" prefHeight="54.0" prefWidth="283.0" promptText="Recherche Texte" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="10.0" />
+            <Button fx:id="btnSelectionner" layoutX="760.0" layoutY="10.0" mnemonicParsing="false" onAction="#selectionnerClicked" prefHeight="54.0" prefWidth="143.0" styleClass="ipad-grey" stylesheets="@Fenetre.css" text="Sélectionner" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Button>
+            <TextField fx:id="rechercherPhone" layoutX="318.0" layoutY="11.0" onKeyReleased="#rechercherPhone" prefHeight="54.0" prefWidth="266.0" promptText="Recherche Phone" />
+            <Button fx:id="btnModifier" layoutX="603.0" layoutY="10.0" mnemonicParsing="false" onAction="#ModifierClicked" prefHeight="54.0" prefWidth="143.0" styleClass="ipad-grey" stylesheets="@Fenetre.css" text="Modifier " AnchorPane.leftAnchor="603.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="imgText" fitHeight="54.0" fitWidth="56.0" layoutX="241.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="imagePhone" fitHeight="54.0" fitWidth="56.0" layoutX="528.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="521.0" AnchorPane.topAnchor="10.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-2.0" layoutY="465.0" prefHeight="145.0" prefWidth="917.0" styleClass="CAISSE-FINAL" stylesheets="@Fenetre.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label fx:id="labelTitre" alignment="TOP_LEFT" layoutX="301.0" layoutY="-1.0" prefHeight="27.0" prefWidth="315.0" text="Ajouter un nouveau client" AnchorPane.leftAnchor="301.0" AnchorPane.rightAnchor="301.0" AnchorPane.topAnchor="-1.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="bntAjouter" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" layoutX="753.0" layoutY="60.0" mnemonicParsing="false" onAction="#ajouterClicked" prefHeight="54.0" prefWidth="143.0" styleClass="ipad-grey" stylesheets="@Fenetre.css" text="Ajouter" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" AnchorPane.bottomAnchor="31.0" AnchorPane.leftAnchor="753.0" AnchorPane.topAnchor="60.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Button>
+            <TextField fx:id="nomprenom" layoutX="13.0" layoutY="39.0" prefHeight="43.0" prefWidth="321.0" promptText="Nom et Prenom" AnchorPane.bottomAnchor="63.0" AnchorPane.leftAnchor="13.0" AnchorPane.topAnchor="39.0" />
+            <TextField fx:id="telephone" layoutX="15.0" layoutY="90.0" prefHeight="43.0" prefWidth="321.0" promptText="Telephone" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="13.0" AnchorPane.topAnchor="90.0" />
+            <TextArea fx:id="adresse" layoutX="350.0" layoutY="40.0" prefHeight="94.0" prefWidth="384.0" promptText="Adresse" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="350.0" AnchorPane.topAnchor="40.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</fx:root>

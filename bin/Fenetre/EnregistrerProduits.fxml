@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseMoved="#MouseInitialSize" prefHeight="602.0" prefWidth="661.0" stylesheets="@Fenetre.css" type="javafx.scene.layout.BorderPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <Pane prefHeight="544.0" prefWidth="661.0" styleClass="CAISSE-FINAL" stylesheets="@Fenetre.css" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="ImgaeProduit" fitHeight="254.0" fitWidth="289.0" layoutX="375.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true" styleClass="ipad-grey" />
+            <Label layoutX="393.0" layoutY="345.0" prefHeight="17.0" prefWidth="76.0" text="Image">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font></Label>
+            <Button fx:id="bntEnregister" layoutX="232.0" layoutY="508.0" mnemonicParsing="false" onAction="#bntEnregisterClicked" prefHeight="86.0" prefWidth="142.0" styleClass="ipad-grey" text="Enregistrer">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font></Button>
+            <Button fx:id="bntJoindre" layoutX="502.0" layoutY="378.0" mnemonicParsing="false" onAction="#bntJoindreClicked" prefHeight="86.0" prefWidth="142.0" styleClass="ipad-grey" />
+            <GridPane layoutX="14.0" layoutY="26.0" prefHeight="417.0" prefWidth="360.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField fx:id="testReference" prefHeight="54.0" prefWidth="360.0" promptText="Référence" />
+                  <TextField fx:id="testNom" prefHeight="54.0" prefWidth="360.0" promptText="Nom" GridPane.rowIndex="1" />
+                  <TextField fx:id="textPrixA" prefHeight="51.0" prefWidth="360.0" promptText="Prix achat" GridPane.rowIndex="2" />
+                  <TextField fx:id="textPrixV" prefHeight="55.0" prefWidth="360.0" promptText="Prix vente" GridPane.rowIndex="3" />
+                  <TextField fx:id="tesxtType" prefHeight="52.0" prefWidth="360.0" promptText="Type" GridPane.rowIndex="4" />
+                  <TextField fx:id="textQuantite" prefHeight="52.0" prefWidth="360.0" promptText="Quantité" GridPane.rowIndex="6" />
+                  <TextField fx:id="textFornisseur" prefHeight="55.0" prefWidth="360.0" promptText="Fornisseur" GridPane.rowIndex="7" />
+                  <TextField fx:id="textTVA" prefHeight="51.0" prefWidth="360.0" promptText="TVA" GridPane.rowIndex="8" />
+                  <TextField fx:id="code_bare" prefHeight="55.0" prefWidth="360.0" promptText="Code Bare " GridPane.rowIndex="9" />
+                  <TextField fx:id="tesxtSousType" prefHeight="52.0" prefWidth="360.0" promptText="Sous Type" GridPane.rowIndex="5" />
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+   </center>
+</fx:root>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<fx:root type="javafx.scene.layout.BorderPane"focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <bottom>
+      <Pane prefHeight="64.0" prefWidth="1946.0" styleClass="PaneCaisse2" stylesheets="@Fenetre.css" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="ImageLogoText" fitHeight="31.0" fitWidth="213.0" layoutX="1676.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" />
+            <TextField fx:id="AfficcheurSomme" cacheShape="false" centerShape="false" editable="false" focusTraversable="false" layoutY="1.0" prefHeight="67.0" prefWidth="508.0" scaleShape="false">
+               <cursor>
+                  <Cursor fx:constant="NONE" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font></TextField>
+            <Label fx:id="timeNow" layoutX="553.0" layoutY="12.0" prefHeight="16.0" prefWidth="308.0" text="hh:mm:ss">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children></Pane>
+   </bottom>
+   <right>
+      <AnchorPane prefHeight="703.0" prefWidth="1437.0" styleClass="PaneCaisse" stylesheets="@Fenetre.css" BorderPane.alignment="TOP_LEFT">
+         <children>
+            <GridPane layoutX="372.0" layoutY="532.0" prefHeight="171.0" prefWidth="656.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="bntCash" mnemonicParsing="false" onAction="#bntCashClicked" prefHeight="174.0" prefWidth="216.0" styleClass="ipad-grey" stylesheets="@Fenetre.css" GridPane.columnIndex="1">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="bntCarte" mnemonicParsing="false" prefHeight="174.0" prefWidth="216.0" styleClass="ipad-grey" stylesheets="@Fenetre.css">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="bntCaisse" mnemonicParsing="false" onAction="#bntCaisseClicked" prefHeight="174.0" prefWidth="216.0" styleClass="ipad-grey" GridPane.columnIndex="2">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </GridPane>
+            <GridPane layoutX="7.0" layoutY="1.0" prefHeight="701.0" prefWidth="104.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="142.0" prefWidth="100.0" styleClass="ipad-grey" stylesheets="@Fenetre.css" />
+                  <Button fx:id="bntCarteCad" mnemonicParsing="false" onMouseClicked="#bntCarteCadClicked" prefHeight="172.0" prefWidth="100.0" styleClass="ipad-grey" text="x" textFill="#e40606" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="bntPlus" mnemonicParsing="false" onMouseClicked="#bntPlusClicked" prefHeight="172.0" prefWidth="100.0" styleClass="ipad-grey" text="+">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="bntPour" mnemonicParsing="false" onMouseClicked="#bntPourClicked" prefHeight="172.0" prefWidth="100.0" styleClass="ipad-grey" text="\%" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="bntMoins" mnemonicParsing="false" onMouseClicked="#bntMoinsClicked" prefHeight="172.0" prefWidth="100.0" styleClass="ipad-grey" text="-" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </GridPane>
+            <GridPane layoutX="123.0" layoutY="30.0" prefHeight="496.0" prefWidth="1308.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="243.60001220703126" minHeight="10.0" prefHeight="173.5999755859375" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="378.0000061035156" minHeight="10.0" prefHeight="322.4000244140625" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ScrollPane fx:id="scrollPane" onMouseEntered="#ScrollPaneMouseEntred" prefHeight="146.0" prefWidth="982.0" styleClass="PaneCaisse">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></ScrollPane>
+                  <ScrollPane fx:id="scrollPane1" prefHeight="352.0" prefWidth="982.0" styleClass="PaneCaisse" GridPane.rowIndex="1">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></ScrollPane>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </right>
+   <top>
+      <BorderPane prefHeight="122.0" prefWidth="1500.0" BorderPane.alignment="CENTER">
+         <right>
+            <Pane prefHeight="122.0" prefWidth="315.0" styleClass="PaneCaisse2" stylesheets="@Fenetre.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="switchButton" layoutX="121.0" layoutY="18.0" mnemonicParsing="false" onAction="#switchButtonClicked" prefHeight="86.0" prefWidth="142.0" styleClass="ipad-grey">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children></Pane>
+         </right>
+         <left>
+            <Pane prefHeight="122.0" prefWidth="1631.0" styleClass="PaneCaisse2" stylesheets="@Fenetre.css" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="ImageUser" fitHeight="101.0" fitWidth="116.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="NameUser" layoutX="143.0" layoutY="34.0" prefHeight="35.0" prefWidth="156.0" text=" Name ">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="FirstNameUser" layoutX="143.0" layoutY="69.0" prefHeight="35.0" prefWidth="169.0" text=" First Name">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+         </left>
+      </BorderPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="702.0" prefWidth="508.0" styleClass="PaneCaisse" stylesheets="@Fenetre.css" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tableCaisse" layoutX="93.0" layoutY="23.0" onMouseClicked="#MousTableClicked" prefHeight="703.2" prefWidth="508.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                <TableColumn fx:id="columnProduit" prefWidth="168.0" text="Produit" />
+                <TableColumn fx:id="columnPrix" prefWidth="168.0" text="Prix" />
+                  <TableColumn fx:id="columnQuantité" prefWidth="168.0" text="Quantité" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </left>
+</fx:root>
